@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wedding.dao.UserDao">
+      <insert id="UserAdd" parameterType="com.wedding.model.User">
+         insert into user(username,password,usex,uage,utel) values(#{username},#{password},#{usex},#{uage},#{utel})
+      </insert>
+      
+      <select id="findByUsernameAndPassWord" parameterType="com.wedding.model.User" resultType="com.wedding.model.User">
+          select * from user where username=#{username} and password=#{password}
+      </select> 
+      <select id="findByUsername" parameterType="com.wedding.model.User" resultType="com.wedding.model.User">
+      select *from user where username=#{username}
+      </select>
+      <update id="modifyUserInfo" parameterType="com.wedding.model.User" >
+      update user set username=#{username},password=#{password},usex=#{usex},uage=#{uage},utel=#{utel} where userid=#{userid}
+      </update>
+</mapper>

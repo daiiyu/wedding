@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>首页</title>
+<title>咨询中心</title>
 <link href="<%=request.getContextPath()%>/css/bootstrap.css"
 	rel="stylesheet" type="text/css" media="all">
 <link href="<%=request.getContextPath()%>/css/style.css"
@@ -68,7 +68,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		$(".swipebox").swipebox();
 	});
 </script>
-
+<script type="text/javascript">
+  function submit(){
+	  alert("发送成功，我们将尽快解决您的问题");
+	  window.location.herf="${pageContext.request.contextPath}/index.do";
+  }
+</script>
 
 
 </head>
@@ -92,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<c:choose>
 							<c:when test="${!empty sessionScope.username}">
-								<li><a href="">${sessionScope.username}</a></li>
+								<li><a href="logout.do">${sessionScope.username}/注销</a></li>
 							</c:when>
 							<c:otherwise>
 								<li><a
@@ -127,9 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<!----- contact-grids ----->
 				<div class="contact-grids">
-					<!-- <div class="contact-map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1578265.0941403757!2d-98.9828708842255!3d39.41170802696131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1407515822047"> </iframe>
-						</div> -->
+				
 					<!----- contact-form ------>
 					<div class="contact-form">
 						<form>
@@ -156,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span>内容:</span>
 								<textarea> </textarea>
 							</div>
-							<input type="submit" value="发送">
+						<input type="button" onclick="submit()" value="发送">
 						</form>
 					</div>
 					<!----- contact-form ------>

@@ -27,6 +27,13 @@ public class WeddingGown {
 	}
 	private int wg_id;
      private int o_id;
-     private String wg_style;
+     public String getWg_introduce() {
+		return wg_introduce;
+	}
+	public void setWg_introduce(String wg_introduce) {
+		this.wg_introduce = wg_introduce;
+	}
+	private String wg_style;
      private int wg_price;
+     private String wg_introduce;
 }

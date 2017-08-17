@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>首页</title>
+<title>重邮婚庆首页</title>
 <link href="<%=request.getContextPath()%>/css/bootstrap.css"
 	rel="stylesheet" type="text/css" media="all">
 <link href="<%=request.getContextPath()%>/css/style.css"
@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<c:choose>
 							<c:when test="${!empty sessionScope.username}">
-								<li><a href="">${sessionScope.username}</a></li>
+								<li><a href="logout.do">${sessionScope.username}/注销</a></li>
 							</c:when>
 							<c:otherwise>
 								<li><a
@@ -118,255 +118,229 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- above is menubar -->
 
 
-	<div class="content">
-		<div class="sonjoe">
-			<div class="container">
-				<div class="col-md-8 sonjoe-grid">
-					<div class="sonjoe1">
+					
+					<div class="content">
+						<div class="sonjoe">
+						<div class="container">
+						<div class="col-md-8 sonjoe-grid">
+						<div class="sonjoe1">
 						<div class="son1">
-							<img src="images/img7.jpg" class="img-responsive" alt="" />
+						<img src="images/img7.jpg" class="img-responsive" alt="" />
 						</div>
 						<div class="son2">
-							<h3>公司概述</h3>
-							<p>重邮婚庆有限责任公司（以下简称重邮婚庆），创立于2017年8月，公司拥有强大的主持、摄影、化妆、场景布置团队，公司资源雄厚，经验丰富，
+						<h3>公司概述</h3>
+						<p>重邮婚庆有限责任公司（以下简称重邮婚庆），创立于2017年8月，公司拥有强大的主持、摄影、化妆、场景布置团队，公司资源雄厚，经验丰富，
 								致力于为新人打造完美的婚礼盛典！</p>
 						</div>
 						<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="col-md-4 sonjoe-grid1">
-					<a href="login.html">我要结婚</a>
-				</div>
-			</div>
-		</div>
-		<div class="pictures-section">
-			<div class="container">
-				<h4>January 2015</h4>
-				<div class="pictures-grids">
-					<div class="pic-grid1">
-						<div class="col-md-3 pic-grid">
-							<a href="images/img8.jpg" class="swipebox"><img
-								src="images/img8.jpg" class="img-responsive" alt="" /></a>
 						</div>
-						<div class="col-md-3 pic-grid">
-							<a href="images/img9.jpg" class="swipebox"><img
-								src="images/img9.jpg" class="img-responsive" alt="" /></a>
 						</div>
-						<div class="col-md-3 pic-grid">
-							<a href="images/img10.jpg" class="swipebox"><img
-								src="images/img10.jpg" class="img-responsive" alt="" /></a>
+						<div class="col-md-4 sonjoe-grid1">
+						<a href="free.do">我要结婚</a>
 						</div>
+						</div>
+						</div>
+						<div class="pictures-section">
+						<div class="container">
+						<h4>January 2017</h4>
+						<div class="pictures-grids">
+						<div class="pic-grid1">
 						<div class="col-md-3 pic-grid">
-							<a href="images/img11.jpg" class="swipebox"><img
-								src="images/img11.jpg" class="img-responsive" alt="" /></a>
+<a href="images/img8.jpg" class="swipebox"><img src="images/img8.jpg" class="img-responsive" alt="" /></a>
+						</div>
+							<div class="col-md-3 pic-grid">
+<a href="images/img9.jpg" class="swipebox"><img src="images/img9.jpg" class="img-responsive" alt="" /></a>
+						</div>
+							<div class="col-md-3 pic-grid">
+<a href="images/img10.jpg" class="swipebox"><img src="images/img10.jpg" class="img-responsive" alt="" /></a>
+						</div>
+							<div class="col-md-3 pic-grid">
+<a href="images/img11.jpg" class="swipebox"><img src="images/img11.jpg" class="img-responsive" alt="" /></a>
 						</div>
 						<div class="clearfix"></div>
-					</div>
-					<div class="pic-grid2">
-						<div class="col-md-3 pic-grid">
-							<a href="images/img12.jpg" class="swipebox"><img
-								src="images/img12.jpg" class="img-responsive" alt="" /></a>
 						</div>
+						<div class="pic-grid2">
 						<div class="col-md-3 pic-grid">
-							<a href="images/img13.jpg" class="swipebox"><img
-								src="images/img13.jpg" class="img-responsive" alt="" /></a>
+<a href="images/img12.jpg" class="swipebox"><img src="images/img12.jpg" class="img-responsive" alt="" /></a>
 						</div>
-						<div class="col-md-3 pic-grid">
-							<a href="images/img14.jpg" class="swipebox"><img
-								src="images/img14.jpg" class="img-responsive" alt="" /></a>
+							<div class="col-md-3 pic-grid">
+<a href="images/img13.jpg" class="swipebox"><img src="images/img13.jpg" class="img-responsive" alt="" /></a>
 						</div>
-						<div class="col-md-3 pic-grid">
-							<a href="images/img15.jpg" class="swipebox"><img
-								src="images/img15.jpg" class="img-responsive" alt="" /></a>
+							<div class="col-md-3 pic-grid">
+<a href="images/img14.jpg" class="swipebox"><img src="images/img14.jpg" class="img-responsive" alt="" /></a>
+						</div>
+							<div class="col-md-3 pic-grid">
+<a href="images/img15.jpg" class="swipebox"><img src="images/img15.jpg" class="img-responsive" alt="" /></a>
 						</div>
 						<div class="clearfix"></div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-		<div class="copyrights">
-			Collect from <a href="http://www.cssmoban.com/"></a>
-		</div>
-		<div class="pict-section">
-			<div class="container">
-				<h4>December 2017</h4>
-				<div class="screen-shots">
+						</div>
+						<div class="clearfix"></div>
+						</div>
+						</div>
+						</div>
+                        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费网站模板</a></div>
+						<div class="pict-section">
+						<div class="container">
+						<h4>December 2017
+                        </h4>
+						<div class="screen-shots">
 					<!--sreen-gallery-cursual-->
-					<div class="sreen-gallery-cursual">
-						<!-- start content_slider -->
-						<div id="owl-demo" class="owl-carousel">
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img16.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img17.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img18.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img19.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img16.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img17.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img18.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img19.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img16.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img17.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img18.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="item-grid">
-									<div class="item-pic">
-										<img src="images/img19.jpg" class="img-responsive" alt="" />
-									</div>
-								</div>
-							</div>
-						</div>
+						<div class="sreen-gallery-cursual">
+							<!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img16.jpg" class="img-responsive" alt="" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img17.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                </div>
+					                 <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img18.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					               <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                		<img src="images/img19.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					                 <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                		<img src="images/img16.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					                 <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img17.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					               <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img18.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					                 <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img19.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+										<div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img16.jpg" class="img-responsive" alt="" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img17.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                </div>
+					                 <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img18.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					               <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/img19.jpg" class="img-responsive" alt="" />
+                                               </div>
+					                		</div>
+					                	</div>
+					               </div>
+				              </div>
+						<!--//sreen-gallery-cursual-->
 					</div>
-					<!--//sreen-gallery-cursual-->
+				
+				<!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items :4,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							  <!-- //requried-jsfiles-for owl -->
+							  </div>
+			</div>
+			<div class="google-map">
+			</div>
 				</div>
-
-				<script>
-					$(document).ready(function() {
-						$("#owl-demo").owlCarousel({
-							items : 4,
-							lazyLoad : true,
-							autoPlay : true,
-							navigation : false,
-							navigationText : false,
-							pagination : true,
-						});
-					});
-				</script>
-				<!-- //requried-jsfiles-for owl -->
-			</div>
-		</div>
-		<div class="google-map"></div>
-	</div>
-	<p></p>
-	<div class="sui-btn-group">
-		<h5>友情链接</h5>
-		<button class="sui-btn">
-			<a href="https://www.baidu.com/">百度一下</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.taobao.com/">淘宝</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.chongqing.daoxila.com/">到喜啦</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.baidu.com/">重庆婚纱摄影</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.baidu.com/">重庆房产</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.baidu.com/">重庆装修网</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.baidu.com/">钻戒定制</a>
-		</button>
-		<button class="sui-btn">
-			<a href="https://www.baidu.com/">重庆旅行</a>
-		</button>
-	</div>
-	<p></p>
-	<div class="footer-section">
-		<div class="container">
-			<div class="footer-top">
 				<p>
-					<a href="http://www.edu.ruanko.com/" target="_blank" title="软酷网">婚庆管理</a>
-					- 软酷网 <a href="http://www.edu.ruanko.com/" title="重邮婚庆"
-						target="_blank">重邮婚庆</a>
-				</p>
-			</div>
-			<script type="text/javascript">
-				$(document).ready(function() {
-					/*
-					var defaults = {
-						containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear' 
-					};
-					 */
+  </p><div class="sui-btn-group">
+<a href="${pageContext.request.contextPath}/wk.do" style="font-size:30px;color:red;margin-left:400px;">结婚旅行攻略</a>
+  <h5>友情链接</h5>
+    <button class="sui-btn"><a href="https://www.baidu.com/">百度一下</a></button>
+    <button class="sui-btn"><a href="https://www.taobao.com/">淘宝</a></button>
+    <button class="sui-btn"><a href="https://www.chongqing.daoxila.com/">到喜啦</a></button>
+    <button class="sui-btn"><a href="https://www.baidu.com/">重庆婚纱摄影</a></button>
+    <button class="sui-btn"><a href="https://www.baidu.com/">重庆房产</a></button>
+    <button class="sui-btn"><a href="https://www.baidu.com/">重庆装修网</a></button>
+    <button class="sui-btn"><a href="https://www.baidu.com/">钻戒定制</a></button>
+    <button class="sui-btn"><a href="https://www.baidu.com/">重庆旅行</a></button>
+  </div>
+<p></p>
+				<div class="footer-section">
+					<div class="container">
+						<div class="footer-top">
+					<p> <a href="http://www.edu.ruanko.com/" target="_blank" title="软酷网">婚庆管理</a> - 软酷网 <a href="http://www.edu.ruanko.com/" title="重邮婚庆" target="_blank">重邮婚庆</a></p>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
-					$().UItoTop({
-						easingType : 'easeOutQuart'
-					});
 
-				});
-			</script>
-			<a href="#" id="toTop" style="display: block;"> <span
-				id="toTopHover" style="opacity: 1;"> </span></a>
+					</div>
+					</div>
+
+						
 
 
-		</div>
-	</div>
-
-
-
-
-
-</body>
+   	
+	</body>
 </html>

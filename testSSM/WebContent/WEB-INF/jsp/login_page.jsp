@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>首页</title>
+<title>登录</title>
 <link href="<%=request.getContextPath()%>/css/bootstrap.css"
 	rel="stylesheet" type="text/css" media="all">
 <link href="<%=request.getContextPath()%>/css/style.css"
@@ -120,70 +120,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 	<form action="<%=request.getContextPath()%>/login.do"
 		method="post" name="register" onsubmit="return regcheck(this);">
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		<p class="f_one">&nbsp;</p>
-		
-		<h1 align="center">${warning}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-		<table width="364" cellspacing="1" cellpadding="3" align="center">
-			<!--<tr><td colspan="2" class="head" height="25"></td></tr>-->
+	      <center>
+	      <p>&nbsp;</p>
+	       <p>&nbsp;</p>
+	      </center>
+		 <p style="font-size:40px;color:black;" align="center">请登录</p>
+		<h1 align="center" style="color:red;">${warning}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+		<table  align="center" style="font-size:15px;">
+	
 			<tbody>
 				<tr>
-					<td width="49" height="34" align="right" valign="top">用户名</td>
-					<td width="220"><input type="text" size="20" maxlength="14" name="username" id="username"> 
-						<input type="button" value="手机号码登录" onclick="return namecheck();"> <!--<br>&nbsp;-->
+					<td align="center">用户名</td>
+					<td ><input type="text" size="20" maxlength="14" name="username" id="username"> 						
 						<div id="check_info"></div></td>
 				</tr>
 				<tr class="f_one">
-					<td align="right">密 码</td>
-					<td valign="top"><input type="password" size="20"
+					<td align="center">密&nbsp; &nbsp;码</td>
+					<td ><input type="password" size="20"
 						maxlength="75" name="password"></td>
 				</tr>
-				<tr class="f_one">
-					<td align="right">&nbsp;</td>
-					<td valign="top"><input type="button" value="忘记密码？"
-						onclick="return namecheck();"></td>
+				
+				<tr>
+				<td align="center" colspan="2"><input type="submit" name="regsubmit" value="登录"></td>             
 				</tr>
 				<tr>
-
-
-
+				 <td style="color:red;" align="center" colspan="2">没有账户？<a href="${pageContext.request.contextPath}/register_page.do">点击此处注册</a> </td>
+				</tr>
+				<tr>
+				 <td style="color:blue;" align="center" colspan="2">管理员登录<a href="${pageContext.request.contextPath}/login_manage_page.do">请点击这里</a> </td>
 				</tr>
 			</tbody>
 		</table>
 		<br>
-		<center>
-			<p>&nbsp;</p>
-			<p>
-				<input type="submit" name="regsubmit" value="登录"> <a
-					href="${pageContext.request.contextPath}/register_page.do">
-					<button type="button">注册</button>
-				</a>
-			</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-		</center>
+
 	</form>
 
 

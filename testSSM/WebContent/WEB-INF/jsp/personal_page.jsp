@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>首页</title>
+<title>个人中心</title>
 <link href="<%=request.getContextPath()%>/css/bootstrap.css"
 	rel="stylesheet" type="text/css" media="all">
 <link href="<%=request.getContextPath()%>/css/style.css"
@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						<c:choose>
 							<c:when test="${!empty sessionScope.username}">
-								<li><a href="">${sessionScope.username}</a></li>
+								<li><a href="logout.do">${sessionScope.username}注销</a></li>
 							</c:when>
 							<c:otherwise>
 								<li><a
@@ -132,26 +132,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div id="Middle">
 		<div class="container clear_float">
 			<div class="col_3 left">
-				<div>
-					<b>管理信息</b>
-				</div>
-				<div class="l_1">
-					<ul>
-						<li>我发布的消息</li>
-						<li>我接受的消息</li>
-						<li>我收藏的消息</li>
-						<li>我的交易消息</li>
-					</ul>
-				</div>
 				<hr>
 				<div>
 					<b>账号信息</b>
 				</div>
 				<div class="l_1">
 					<ul>
-						<li>我的资料</li>
-						<li>安全中心</li>
-						<li>我的余额</li>
+						<li><a href="">查看我的订单</a></li>
+						
+				
 					</ul>
 				</div>
 			</div>
@@ -164,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col_2 fl r_h">
 						<div class="r_2_1">
 
-							<img src="images/tangbao.jpg" class="img-responsive" alt="" />
+							<img src="images/ad.jpg" class="img-responsive" alt="" />
 							<div>
 								<a
 									href="#######################################################"

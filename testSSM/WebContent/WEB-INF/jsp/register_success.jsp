@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>首页</title>
+<title>注册成功页</title>
 <link href="<%=request.getContextPath()%>/css/bootstrap.css"
 	rel="stylesheet" type="text/css" media="all">
 <link href="<%=request.getContextPath()%>/css/style.css"
@@ -116,7 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- above is menubar -->
-<h1>login success
-welcome ${loginsuccess.getUsername}</h1>
+<h1 align="center">恭喜您注册成功！ &nbsp;您的账号为：${requestScope.msg}</h1><br>
+<center style="font-size:15px;"><a href="${pageContext.request.contextPath}/login_page.do">点击此处进行登录</a></center>
 </body>
 </html>

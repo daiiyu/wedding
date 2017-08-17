@@ -6,7 +6,14 @@ public class MainCar {
 	private String mc_name;
 	private String mc_style;
 	private String mc_color;
-	private String mc_price;
+	private int mc_price;
+	private String mc_introduce;
+	public String getMc_introduce() {
+		return mc_introduce;
+	}
+	public void setMc_introduce(String mc_introduce) {
+		this.mc_introduce = mc_introduce;
+	}
 	public int getMc_id() {
 		return mc_id;
 	}
@@ -37,10 +44,10 @@ public class MainCar {
 	public void setMc_color(String mc_color) {
 		this.mc_color = mc_color;
 	}
-	public String getMc_price() {
+	public int getMc_price() {
 		return mc_price;
 	}
-	public void setMc_price(String mc_price) {
+	public void setMc_price(int mc_price) {
 		this.mc_price = mc_price;
 	}
 }

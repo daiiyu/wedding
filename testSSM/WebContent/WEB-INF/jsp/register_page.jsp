@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>首页</title>
+<title>注册</title>
 <link href="<%=request.getContextPath()%>/css/bootstrap.css"
 	rel="stylesheet" type="text/css" media="all">
 <link href="<%=request.getContextPath()%>/css/style.css"
@@ -127,7 +127,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<td><input type="text" size="20" maxlength="14"
 						name="username" id="username"> <input type="button"
 						value="检查用户名" onclick="return namecheck();">
-						(不能有空格，可以是中文，长度控制在 1 - 12 字节以内) <!--<br>&nbsp;-->
+						(不能有空格，字母、字符和数字组合，长度控制在 1 - 12 字节) <!--<br>&nbsp;-->
 						<div id="check_info"></div></td>
 				</tr>
 				<tr class="f_one">
@@ -166,12 +166,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 				</tr>
-				<tr>
-					<td class="f_one" align="right">认证码<font color="red">*</font></td>
-					<td class="f_one"><input type="text" maxlength="4"
-						name="gdcode" size="10">&nbsp;<img src="../ck.php?windid="
-						align="absmiddle"> 请将图片中的数字或英文字母填入到文本框中</td>
-				</tr>
+			
 
 				<tr>
 					<td colspan="3" height="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(备注：带

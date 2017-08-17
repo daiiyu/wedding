@@ -1,7 +1,14 @@
 package com.wedding.model;
 
 public class UsherCar {
-  private int uc_id;
+	private String uc_introduce;
+  public String getUc_introduce() {
+		return uc_introduce;
+	}
+	public void setUc_introduce(String uc_introduce) {
+		this.uc_introduce = uc_introduce;
+	}
+private int uc_id;
   private int o_id;
   private String uc_name;
   private String uc_style;

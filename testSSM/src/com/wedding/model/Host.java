@@ -8,7 +8,14 @@ public class Host {
   private int h_age;
   private String h_tel;
   private String h_introduce;
-  public int getH_id() {
+  private int h_price;
+  public int getH_price() {
+	return h_price;
+}
+public void setH_price(int h_price) {
+	this.h_price = h_price;
+}
+public int getH_id() {
 	return h_id;
 }
 public void setH_id(int h_id) {

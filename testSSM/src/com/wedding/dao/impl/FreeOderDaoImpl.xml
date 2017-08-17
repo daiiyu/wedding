@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wedding.dao.FreeOrderDao">    
+       <select id="findHost" parameterType="com.wedding.model.Host" resultType="com.wedding.model.Host">
+          select * from host where h_name=#{h_name}
+      </select>
+      <select id="findCamera" parameterType="com.wedding.model.Camera" resultType="com.wedding.model.Camera">
+          select * from camera where ca_name=#{ca_name}
+      </select> 
+      <select id="findHotel" parameterType="com.wedding.model.Hotel" resultType="com.wedding.model.Hotel">
+          select * from hotel where ho_name=#{ho_name}
+      </select>
+      <select id="findMainCar" parameterType="com.wedding.model.MainCar" resultType="com.wedding.model.MainCar">
+          select * from maincar where mc_name=#{mc_name}
+      </select>
+      <select id="findUsherCar" parameterType="com.wedding.model.UsherCar" resultType="com.wedding.model.UsherCar">
+          select * from ushercar where uc_name=#{uc_name}
+      </select>
+      <select id="findWeddingGown" parameterType="com.wedding.model.WeddingGown" resultType="com.wedding.model.WeddingGown">
+          select * from wedding_gown where wg_style=#{wg_style}
+      </select>
+      <select id="findFlower" parameterType="com.wedding.model.Flower" resultType="com.wedding.model.Flower">
+          select * from flower where f_name=#{f_name}
+      </select>
+      <select id="findHostAll" resultType="com.wedding.model.Host">
+          select * from host
+      </select>
+      <select id="findCameraAll" resultType="com.wedding.model.Camera">
+          select * from camera
+      </select>
+      <select id="findHotelAll" resultType="com.wedding.model.Hotel">
+          select * from hotel
+      </select>
+      <select id="findUsherCarAll" resultType="com.wedding.model.UsherCar">
+          select * from ushercar
+      </select>
+      <select id="findMainCarAll" resultType="com.wedding.model.MainCar">
+          select * from maincar
+      </select>
+       <select id="findWeddingGownAll" resultType="com.wedding.model.WeddingGown">
+          select * from wedding_gown
+      </select>
+      <select id="findFlowerAll" resultType="com.wedding.model.Flower">
+          select * from flower
+      </select>
+       <insert id="AddFreeOrder" parameterType="com.wedding.model.FreeOrder">
+         insert into free_order(f_name,uc_name,wg_style,mc_name,ca_name,h_name,price,username) values(#{f_name},#{uc_name},#{wg_style},#{mc_name},#{ca_name},#{h_name},#{price},#{username})
+      </insert>
+       <select id="findFreeOrder" parameterType="com.wedding.model.FreeOrder" resultType="com.wedding.model.FreeOrder">
+          select * from free_order where ca_name=#{ca_name}
+      </select>
+</mapper>

@@ -4,6 +4,13 @@ public class Flower {
   private int f_id;
   private String f_name;
   private int f_price;
+  private String f_introduce;
+public String getF_introduce() {
+	return f_introduce;
+}
+public void setF_introduce(String f_introduce) {
+	this.f_introduce = f_introduce;
+}
 public int getF_id() {
 	return f_id;
 }
